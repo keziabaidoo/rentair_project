@@ -16,11 +16,11 @@ export default class DateTimeScreen extends Component {
 
   handleComfirm = (date) => {
     this.setState({
-      DateDisplay: date,
+      DateDisplay: date.toUTCString(),
     });
   };
 
-  onPressCancel = (datetime) => {
+  onPressCancel = (date) => {
     this.setState({
       isVisible: false,
     });
