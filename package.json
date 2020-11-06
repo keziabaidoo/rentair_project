@@ -10,15 +10,22 @@
   "dependencies": {
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/native": "^5.8.6",
+    "@react-navigation/stack": "^5.12.3",
     "expo": "~39.0.2",
     "expo-status-bar": "~1.0.2",
+    "formik": "^2.2.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
+    "react-native-formik": "^1.7.8",
     "react-native-gesture-handler": "~1.7.0",
+    "react-native-modal-datetime-picker": "react-native-community/datetimepicker",
+    "react-native-picker": "^4.3.7",
+    "react-native-picker-dropdown": "^0.1.2",
     "react-native-reanimated": "~1.13.0",
     "react-native-safe-area-context": "3.1.4",
     "react-native-screens": "~2.10.1",
+    "react-native-vector-icons": "^7.1.0",
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {

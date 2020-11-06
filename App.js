@@ -1,14 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import WelcomeScreen from "./src/screens/WelcomeScreen";
-// import { NavigationContainer, StackActions } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Stack.Screen name="WelcomeScreen" component="WelcomeScreen" />
-    </View>
+    <StackNavigationContainer>
+      <StackNavigator>
+        <Stack.Screen   name="WelcomeScreen" component={WelcomeScreen} 
+           options:{{
+           headerTitle='RentAir',
+           headerTitleAlign='center',
+           headerTinColor='yellow'
+          }}
+       />
+      </StackNavigator>
+    </StackNavigationContainer>
   );
 }
 
